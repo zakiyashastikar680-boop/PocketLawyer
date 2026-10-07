@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Documents | Pocket Lawyer AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ⚖ <span>Pocket Lawyer</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="analyzer.html">
+                Legal Analyzer
+            </a>
+
+            <a href="roadmap.html">
+                Roadmap
+            </a>
+
+            <a href="documents.html" class="active">
+                Documents
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<section class="page-header">
+
+    <div class="badge">📄 DOCUMENT ASSISTANT</div>
+
+    <h1>Understand Your Documents</h1>
+
+    <p>
+        Upload a document to explore how Pocket Lawyer can
+        organize important information.
+    </p>
+
+</section>
+
+
+<section class="document-container">
+
+
+    <div class="upload-card">
+
+        <div class="upload-icon">
+            📄
+        </div>
+
+        <h2>Upload Your Document</h2>
+
+        <p>
+            Select a document for the prototype analysis.
+        </p>
+
+
+        <label class="file-label">
+
+            Choose Document
+
+            <input type="file"
+                   id="documentFile"
+                   accept=".pdf,.txt,.doc,.docx">
+
+        </label>
+
+
+        <p id="fileName" class="file-name">
+            No file selected
+        </p>
+
+
+        <button class="primary-btn"
+                onclick="analyzeDocument()">
+
+            🔍 Analyze Document
+
+        </button>
+
+    </div>
+
+
+    <div id="documentResult"
+         class="document-result">
+
+        <div class="empty-document">
+
+            <div>📑</div>
+
+            <h3>No Document Analyzed Yet</h3>
+
+            <p>
+                Upload a document above to see the prototype result.
+            </p>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">
+        ⚖ Pocket Lawyer AI
+    </div>
+
+    <p>
+        General legal information and educational assistance.
+    </p>
+
+    <p class="copyright">
+        © 2026 Pocket Lawyer AI
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

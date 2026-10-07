@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Legal Analyzer | Pocket Lawyer AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            ⚖ <span>Pocket Lawyer</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="analyzer.html" class="active">Legal Analyzer</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="documents.html">Documents</a>
+            <a href="about.html">About</a>
+        </div>
+
+    </nav>
+</header>
+
+
+<section class="page-header">
+
+    <div class="badge">🧠 AI LEGAL ANALYZER</div>
+
+    <h1>Understand Your Legal Problem</h1>
+
+    <p>
+        Describe your situation and receive a simple structured
+        explanation with suggested documents.
+    </p>
+
+</section>
+
+
+<section class="analyzer-container">
+
+    <div class="analyzer-box">
+
+        <h2>Tell us about your problem</h2>
+
+        <p class="helper-text">
+            Avoid sharing passwords, financial information or other sensitive information.
+        </p>
+
+        <label>Describe your legal problem</label>
+
+        <textarea
+            id="problem"
+            placeholder="Example: My landlord has not returned my security deposit..."
+        ></textarea>
+
+
+        <div class="form-grid">
+
+            <div>
+                <label>Legal Category</label>
+
+                <select id="category">
+
+                    <option value="General">General</option>
+                    <option value="Rental">Rental / Housing</option>
+                    <option value="Consumer">Consumer</option>
+                    <option value="Employment">Employment</option>
+                    <option value="Family">Family</option>
+                    <option value="Business">Business</option>
+                    <option value="Cyber">Cyber</option>
+                    <option value="Education">Education</option>
+
+                </select>
+            </div>
+
+
+            <div>
+
+                <label>State</label>
+
+                <select id="state">
+
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Other">Other</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <button class="primary-btn full-btn" onclick="analyzeProblem()">
+            🔍 Analyze My Problem
+        </button>
+
+    </div>
+
+
+    <div id="result" class="result-box" style="display:none;">
+
+        <div class="result-header">
+
+            <div>
+                <p class="small-title">ANALYSIS RESULT</p>
+                <h2 id="resultCategory">Legal Issue</h2>
+            </div>
+
+            <div class="result-check">✓</div>
+
+        </div>
+
+
+        <div class="result-content">
+
+            <h3>💡 Understanding</h3>
+
+            <p id="resultExplanation"></p>
+
+
+            <h3>📑 Suggested Documents</h3>
+
+            <ul id="documents"></ul>
+
+        </div>
+
+
+        <div class="notice">
+            ⚠ This result is for general educational information and
+            does not replace advice from a qualified lawyer.
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">⚖ Pocket Lawyer AI</div>
+
+    <p>
+        General legal information and educational assistance.
+    </p>
+
+    <p class="copyright">© 2026 Pocket Lawyer AI</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
